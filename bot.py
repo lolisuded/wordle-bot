@@ -20,7 +20,6 @@ def poopy():
     green_number_range2 = range(0,4)
     green_number_range3 = range(0,3)
     green_number_range4 = range(0,2)
-    green_number_range5 = range(0,1)
     number_placement = range(1, 6)
     awnsers = []
     temporary_awnsers = []
@@ -39,7 +38,7 @@ def poopy():
 
                         try:
                             q3 = int(input("Hoeveel groene letters heb je: "))
-                            if q3 in number_range:
+                            if q3 in green_number_range1:
                                 if q3 == 1:
                                     try:
                                         q4 = int(input("Op welke plek staat de groene letter: "))
@@ -324,7 +323,7 @@ def poopy():
             
                         try:
                             q3 = int(input("Hoeveel groene letters heb je: "))
-                            if q3 in number_range:
+                            if q3 in green_number_range2:
                                 if q3 == 1:
                                     try:
                                         q4 = int(input("Op welke plek staat de groene letter: "))
