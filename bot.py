@@ -1,7 +1,8 @@
 from fileinput import close
+import sys
 
 
-wordsfile = open(r"C:\Users\lolis\Desktop\Programern\wordle-bot\words.txt", "r")
+wordsfile = open("words.txt", "r")
 words_list = []
 
 for word in wordsfile:
