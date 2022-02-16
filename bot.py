@@ -584,7 +584,7 @@ def poopy():
                                             print("moet getal tussen 1-5")
                                     except ValueError:
                                         print("ik haat jou")
-                                elif q4 == 0:
+                                elif q3 == 0:
                                     awnsers = temporary_awnsers
                                     print("Hier zijn je antwoorden LOSER " + ', '.join(awnsers))
                             else:
