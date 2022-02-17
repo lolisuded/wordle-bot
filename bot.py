@@ -786,9 +786,10 @@ def poopy():
                                         if len(q5) == 1:
                                             grl1 = q5.lower()
                                             q4 = q4 - 1
-                                            for a in words_list:
-                                                if grl1 == a[q4]:
-                                                    awnsers.append(a)
+                                            for w in words_list:
+                                                wordle_str = ''.join(w)
+                                                if grl1 == wordle_str[q4]:
+                                                    awnsers.append(wordle_str)
                                             print("Hier zijn je antwoorden LOSER " + ', '.join(awnsers))
                                         else:
                                             print("jij verpest alles")
@@ -815,10 +816,11 @@ def poopy():
                                                         
                                                         q4 = q4 - 1
                                                         q4_2 = q4_2 - 1
-                                                        for a in temporary_awnsers:
-                                                            if grl1 == a[q4]:
-                                                                if grl2 == a[q4_2]:
-                                                                    awnsers.append(a)
+                                                        for w in words_list:
+                                                            wordle_str = ''.join(w)
+                                                            if grl1 == wordle_str[q4]:
+                                                                if grl2 == wordle_str[q4_2]:
+                                                                    awnsers.append(wordle_str)
                                                         if not awnsers:
                                                             print("rip er zijn geen woorden met deze combinatie")
                                                         else:
@@ -860,11 +862,12 @@ def poopy():
                                                                     q4 = q4 - 1
                                                                     q4_2 = q4_2 - 1
                                                                     q4_3 = q4_3 - 1
-                                                                    for a in words_list:
-                                                                        if grl1 == a[q4]:
-                                                                            if grl2 == a[q4_2]:
-                                                                                if grl3 == a[q4_3]:
-                                                                                    awnsers.append(a)
+                                                                    for w in words_list:
+                                                                        wordle_str = ''.join(w)
+                                                                        if grl1 == wordle_str[q4]:
+                                                                            if grl2 == wordle_str[q4_2]:
+                                                                                if grl3 == wordle_str[q4_3]:
+                                                                                    awnsers.append(wordle_str)
                                                                     if not awnsers:
                                                                         print("rip er zijn geen woorden met deze combinatie")
                                                                     else:
@@ -920,12 +923,13 @@ def poopy():
                                                                                 q4_2 = q4_2 - 1
                                                                                 q4_3 = q4_3 - 1
                                                                                 q4_4 = q4_4 - 1
-                                                                                for a in words_list:
-                                                                                    if grl1 == a[q4]:
-                                                                                        if grl2 == a[q4_2]:
-                                                                                            if grl3 == a[q4_3]:
-                                                                                                if grl4 == a[q4_4]:
-                                                                                                    awnsers.append(a)
+                                                                                for w in words_list:
+                                                                                    wordle_str = ''.join(w)
+                                                                                    if grl1 == wordle_str[q4]:
+                                                                                        if grl2 == wordle_str[q4_2]:
+                                                                                            if grl3 == wordle_str[q4_3]:
+                                                                                                if grl4 == wordle_str[q4_4]:
+                                                                                                    awnsers.append(wordle_str)
                                                                                 if not awnsers:
                                                                                     print("rip er zijn geen woorden met deze combinatie")
                                                                                 else:
@@ -994,13 +998,14 @@ def poopy():
                                                                                             q4_3 = q4_3 - 1
                                                                                             q4_4 = q4_4 - 1
                                                                                             q4_5 = q4_5 - 1
-                                                                                            for a in words_list:
-                                                                                                if grl1 == a[q4]:
-                                                                                                    if grl2 == a[q4_2]:
-                                                                                                        if grl3 == a[q4_3]:
-                                                                                                            if grl4 == a[q4_4]:
-                                                                                                                if grl5 == a[q4_5]:
-                                                                                                                    awnsers.append(a)
+                                                                                            for w in words_list:
+                                                                                                wordle_str = ''.join(w)
+                                                                                                if grl1 == wordle_str[q4]:
+                                                                                                    if grl2 == wordle_str[q4_2]:
+                                                                                                        if grl3 == wordle_str[q4_3]:
+                                                                                                            if grl4 == wordle_str[q4_4]:
+                                                                                                                if grl5 == wordle_str[q4_5]:
+                                                                                                                    awnsers.append(wordle_str)
                                                                                             if not awnsers:
                                                                                                 print("rip er zijn geen woorden met deze combinatie")
                                                                                             else:
@@ -1038,8 +1043,7 @@ def poopy():
                             except ValueError:
                                 print("ik haat jou")
                         elif q3 == 0:
-                            awnsers = temporary_awnsers
-                            print("Hier zijn je antwoorden LOSER " + ', '.join(awnsers))
+                            print("stfu")
                     else:
                         print("moet cijfer tussen 0-5")
                 except ValueError:
